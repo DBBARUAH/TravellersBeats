@@ -130,6 +130,7 @@ footer {
 form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2em; /* Add space between the form and the footer */
 }
 
 label {
