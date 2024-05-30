@@ -120,11 +120,44 @@ header {
   object-fit: cover; /* Ensure the video covers the container */
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1em 0;
+
+.about-section, .projects-section, .contact-section {
+  padding: 2em;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-text h3 {
+  margin-top: 1em;
+}
+
+.projects-section .project {
+  margin-bottom: 2em;
+}
+
+.projects-section .project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.projects-section .project h3 {
+  margin-top: 0.5em;
 }
 
 form {
@@ -160,26 +193,9 @@ button:hover {
   background-color: #444;
 }
 
-.project {
-  background-color: #f4f4f4;
-  padding: 1em;
-  margin-bottom: 1em;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.project h3 {
-  margin-top: 0;
-}
-
-.project p {
-  color: #333;
-}
-
-.project a {
-  color: #333;
-  text-decoration: none;
-}
-
-.project a:hover {
-  text-decoration: underline;
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
 }
