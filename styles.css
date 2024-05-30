@@ -130,7 +130,6 @@ section {
 
 .about-section h2 {
   margin-bottom: 1em;
-  
 }
 
 .about-content {
@@ -157,7 +156,6 @@ section {
 .about-text p {
   margin-bottom: 1em;
   text-align: justify;
-  
 }
 
 .projects-section {
@@ -172,21 +170,27 @@ section {
   margin-bottom: 2em;
 }
 
+.projects-section .project h3 {
+  text-align: center;
+  width: 100%;
+  margin: 0.5em 0;
+}
+
+.projects-section .project-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
 .projects-section .project img {
-  border-radius: 10px;
-  width: auto;
+  width: 100%;
   max-width: 400px;
   height: auto;
   border-radius: 10px;
   margin-top: 1em;
   margin-bottom: 1em;
   margin-right: 0em;
-}
-
-.projects-section .project h3 {
-  text-align: center;
-  width: 100%;
-  margin: 0.5em 0;
 }
 
 form {
@@ -235,5 +239,10 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+  }
+
+  .projects-section .project-images {
+    flex-direction: row;
+    justify-content: center;
   }
 }
