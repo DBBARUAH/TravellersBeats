@@ -1,11 +1,12 @@
-let currentVideoIndex = 0;
-const videos = document.querySelectorAll('.video-carousel video');
-const videoCount = videos.length;
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
 
-function showNextVideo() {
-  videos[currentVideoIndex].classList.remove('active');
-  currentVideoIndex = (currentVideoIndex + 1) % videoCount;
-  videos[currentVideoIndex].classList.add('active');
+function showNextSlide() {
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % totalSlides;
+  slides[currentSlide].classList.add('active');
+  document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
 }
 
-setInterval(showNextVideo, 8000);
+setInterval(showNextSlide, 8000);
