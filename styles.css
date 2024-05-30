@@ -77,7 +77,7 @@ header {
 }
 
 .menu-bar nav ul {
-  list-style: none;
+  list-style-position: inside;
   display: flex;
   gap: 1em;
 }
@@ -119,29 +119,30 @@ header {
 }
 
 section {
-  padding: 2em;
-  text-align: center;
+  text-align: left;
 }
 
 .about-section {
-  padding: 2em 0;
-  text-align: center;
+  padding: 2em 5em;
+  text-align: left;
 }
 
 .about-section h2 {
   margin-bottom: 1em;
+  text-align: left;
 }
 
 .about-content {
+  padding: 1em 2;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   gap: 1em;
 }
 
 .about-image {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
   border-radius: 10px;
   margin-bottom: 1em;
@@ -159,28 +160,32 @@ section {
 }
 
 .projects-section {
-  padding: 2em 5em;
-  width: auto;
+    padding: 2em 5em;
+    text-align: left;
 }
 
 .projects-section .project {
   width: auto;
-  align-items: center;
+  align-items: left;
   gap: 1em;
   margin-bottom: 2em;
 }
 
 .projects-section .project h3 {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
   width: 100%;
-  margin: 0.5em 0;
+  padding: 1em 2;
+  text-align: left;
 }
 
 .projects-section .project-images {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  align-items: center;
+  gap: 6em;
+  padding: 1em 0em;
+  align-items: left;
 }
 
 .projects-section .project img {
@@ -190,19 +195,27 @@ section {
   border-radius: 10px;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-right: 0em;
+  margin-right: 5em;
+  padding: 1em 2;
+}
+
+.contact-section {
+  padding: 2em 5em;
+  text-align: left;
 }
 
 form {
   display: flex;
   flex-direction: column;
   max-width: 600px;
-  margin: 0 auto;
+  text-align: left; /* Ensure the text within the form is left-aligned */
+  align-items: flex-start; /* Align the items to the start (left) */
 }
 
 label {
   margin-top: 0.5em;
   color: #333;
+  text-align: left; /* Ensure the labels are left-aligned */
 }
 
 input, textarea, button {
@@ -212,7 +225,9 @@ input, textarea, button {
   color: #333;
   border: 1px solid #ddd;
   border-radius: 5px;
+  width: 100%; /* Ensure the input fields take full width */
 }
+
 
 button {
   background-color: #333;
@@ -237,12 +252,17 @@ footer {
 @media (min-width: 768px) {
   .about-content, .projects-section .project {
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: flex-start;
   }
 
   .projects-section .project-images {
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
+  }
+  .contact-section form {
+    display: flex;
+    flex-direction: column; /* Ensure form is left-aligned */
+    justify-content: left;
   }
 }
