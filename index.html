@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travellers Beats</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="contact-info">
+      <span><i class="fas fa-phone"></i> +123-456-7890</span>
+      <span><i class="fas fa-envelope"></i> thetravellersbeats@gmail.com</span>
+      <div class="social-links">
+        <a href="https://www.instagram.com/travellers.beats" target="_blank"><i class="fab fa-instagram orangeiconcolor"></i> </a>
+        <a href="https://www.youtube.com/@dharmendrabaruah3818" target="_blank"><i class="fab fa-youtube"></i> </a>
+      </div>
+    </div>
+    <div class="logo-menu">
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Travellers Beats Logo" style="width:50px;height:auto;">
+        <span>Travellers Beats</span>
+      </div>
+      <nav class="menu-bar">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1>Travellers Beats</h1>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I am [Your Name], a passionate web developer with experience in building dynamic and responsive websites. I love to code and create beautiful web applications. In my free time, I enjoy exploring new technologies and improving my skills.</p>
+      <div class="video-carousel">
+        <video class="active" autoplay muted loop>
+          <source src="videos/ladybirdsunset.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video autoplay muted loop>
+          <source src="videos/video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video autoplay muted loop>
+          <source src="videos/video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>Description of your first project.</p>
+        <a href="https://link-to-your-project.com" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Description of your second project.</p>
+        <a href="https://link-to-your-project.com" target="_blank">View Project</a>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div id="error-message"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Travellers Beats</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
